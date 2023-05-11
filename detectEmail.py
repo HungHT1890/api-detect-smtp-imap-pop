@@ -17,11 +17,12 @@ def detect_smtp_imap_pop3(email):
             protocol = respond_detect[x]['protocol']
             host_name = respond_detect[x]['hostname']
             port = respond_detect[x]['port']
-            print(protocol,host_name,port)
+            # return (protocol,host_name,port)
 
     except Exception as f:
         print(f)
         pass
 
 
-detect_smtp_imap_pop3(email='hungsaki2003@gmail.com')
+a , b , c = (detect_smtp_imap_pop3(email='hungsaki2003@gmail.com'))
+print(a)
